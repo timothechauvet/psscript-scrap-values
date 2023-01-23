@@ -18,9 +18,9 @@ Switch: Outputs the data as text instead as in a file.
 String: String of text or Regex command to lookup for.
 .EXAMPLE
 Get-ReferenceLocation -Text DATABASENAME
-Gets information about the computer and outputs it as raw text.
+Gets string and outputs the location of the strings that have been found in a file.
 Get-ReferenceLocation -Text DATABASENAME -ToString
-Gets information about the computer and outputs it as raw text.
+Gets string and outputs the location of the strings that have been found as raw text.
 .NOTES
 This script will output context
 .LINK
