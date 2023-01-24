@@ -45,7 +45,6 @@ Github repo: https://github.com/timothechauvet/psscript-scrap-values
             $_ | Select-String $Text -AllMatches -SimpleMatch -Context 6,6 | ForEach-Object {
                 Write-Output $_
             }
-            Write-Output "---"
         }
     }
     else
@@ -54,7 +53,6 @@ Github repo: https://github.com/timothechauvet/psscript-scrap-values
             $_ | Select-String $Text -AllMatches -SimpleMatch -Context 6,6 | ForEach-Object {
                 $_ | Out-File ../result.txt -Append
             }
-            Out-File ../result.txt -Append
         }
     }
 
